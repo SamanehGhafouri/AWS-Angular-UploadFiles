@@ -13,13 +13,13 @@ export class AppComponent {
   progress: { percentage: number } = { percentage: 0 };
   selectedFile = null;
   // changeImage = false;
-  // file: string;
+  file: string;
   //
   constructor(private service: AwsService, private http: HttpClient) {}
-  //
-  // viewFile(){
-  //   window.open('https://bucketName.s3.cloudLocation.amazonaws.com/'+this.file);
-  // }
+
+  viewFile(){
+    window.open('https://bucketName.s3.cloudLocation.amazonaws.com/'+this.file);
+  }
   //
   // deleteFile(){
   //   this.http.post<string>
