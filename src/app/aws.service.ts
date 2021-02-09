@@ -9,7 +9,7 @@ export class AwsService {
 
   constructor(private http: HttpClient) { }
 
-  pushFileToStorage(file: File): Observable<HttpEvent<{}>>{
+  pushFileToStorage(file: File): Observable<HttpEvent<{}>> {
 
     const data: FormData = new FormData();
     data.append('file', file);
